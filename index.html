@@ -4,24 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fetch Kenya</title>
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Your one stop shopping solution</h1>
-        <div id="cart">
-            <h3>Cart</h3>
-            <ul id="cart-items">
-                <!-- Cart items will be dynamically added here -->
+    <div class="header">
+        <div class="navbar">
+            <p>Fetch</p>
+                <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
-            <p>Total: $<span id="cart-total">0.00</span></p>
-            <button id="checkout-btn">Checkout</button>
         </div>
-    </header>
-    <main id="products">
-        <!-- Product cards will be dynamically added here -->
-    </main>
-
-    <script src="scripts.js"></script>
+         <div class="navbar-b">
+            <div class="dropdown">
+                <select name="">
+                    <option value="1">Categories</option>
+                    <option value="2">All</option>
+                    <option value="3">Toiletries</option>
+                    <option value="4">Phone Accessories</option>
+                    <option value="5">Beauty</option>
+                </select>
+            </div>
+            <div class="search">
+                    <input type="search" placeholder="search...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p>0</p></div>
+        </div>
+        
+        <main><div id="product-list" class="product-list"></div></main>
+    
+    <script src="script.js"></script>
 </body>
 </html>
